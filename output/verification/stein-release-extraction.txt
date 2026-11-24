@@ -1,0 +1,22 @@
+Extracted release proof verification, 24 November 2026
+
+Tested a candidate ZIP with the final proof input inventory. Verified every proof input against the release sources before rebuilding the umbrella. The check reused compiled artifacts for the 206 source-identical library modules from the earlier successful clean build. The isolated search path contained those modules and the pinned upstream libraries.
+Proof input manifest SHA-256: 18c5487020af76691964e1f3ba89a720a699c5446d0ee9398a6436637f18acc3
+
+Extracted candidate proof and verified all 216 proof input hashes; 206 previously compiled module artifacts made available.
+TransportOkaGrauert.lean — exit status 0
+
+CheckStrictExhaustion.lean — exit status 0
+Full-disk strict exhaustion checked. Axiom dependencies: [propext, Quot.sound, Classical.choice]
+
+Audit.lean — exit status 0
+Checked 4176 project declarations. Axiom dependencies: [propext, Quot.sound, Classical.choice]
+
+CheckGeneralStein.lean — exit status 0
+General Stein theorem checked: [TransportOkaGrauert.GeneralStein.universal_chart,
+ TransportOkaGrauert.GeneralStein.universal_manifold]
+
+The separate upstream-only kernel replay over these inputs also passed.
+Replaying 4176 local declarations from 207 modules against upstream dependencies only.
+Kernel accepted 4174 logical declarations, including both universal Stein theorems.
+The compiler's separate runtime declarations omitted by LeanChecker: #[_private.TransportOkaGrauert.PolynomialDisk.0.TransportOkaGrauert.PolynomialDisk.timesZPow._unsafe_rec, TransportOkaGrauert.FlatScalar.upperP._unsafe_rec]

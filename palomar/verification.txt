@@ -1,0 +1,15 @@
+2026-11-24, local macOS, Lean 4.28.0, ./palomar/check-interface.sh
+Temporary Solution header converted to legacy syntax; proof body unchanged.
+Challenge has one deliberate proof placeholder.
+Build completed successfully (3518 jobs).
+Identical theorem signature and 24 project-local declarations in the statement closure, including definitions and constructor types.
+Solution transitive axioms: #[propext, Quot.sound, Classical.choice]
+Command exit status: 0
+
+SHA-256 of interface inputs
+6cab8d470102d4c8248fb51dcbbf6374236e5d1242da59ea408fb84603d97129  Challenge.lean
+76305826fc9fec8b4915acabc0768aa498f462e2ff8ff0fc120b95c372270d8e  RegistryDefinitions.lean
+2c4d6123b1cd633d5c184d28cb0ed9505d9b36aa7bb2bc47fd7b399edbf2a434  Solution.lean
+f6593dbe6d393f24230b07934ab9b55683454591a3acc75d6bfb83ded5117846  CheckInterface.lean
+bac74bcc02d857090cb000667c063dfc25deaf5c1ae3c07b9b7247a76faf05c6  check-interface.sh
+0d2295fa68fd0a281af60afad1a7c5e9ce165b53ecdba0470e0fcff584097b01  comparator.json

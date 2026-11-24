@@ -1,0 +1,3 @@
+Replaying 4176 local declarations from 207 modules against upstream dependencies only.
+Kernel accepted 4174 logical declarations, including both universal Stein theorems.
+The compiler's separate runtime declarations omitted by LeanChecker: #[_private.TransportOkaGrauert.PolynomialDisk.0.TransportOkaGrauert.PolynomialDisk.timesZPow._unsafe_rec, TransportOkaGrauert.FlatScalar.upperP._unsafe_rec]

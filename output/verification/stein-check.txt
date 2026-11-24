@@ -1,0 +1,18 @@
+Local verification on 2026-11-24, Lean 4.28.0. Exit status 0 for each command.
+See stein-clean-build.txt for the provenance of the 206 imported library modules and the rebuilt umbrella.
+
+$ lean CheckStrictExhaustion.lean
+Full-disk strict exhaustion checked. Axiom dependencies: [propext, Quot.sound, Classical.choice]
+
+$ lean Audit.lean
+Checked 4176 project declarations. Axiom dependencies: [propext, Quot.sound, Classical.choice]
+
+$ lean CheckGeneralStein.lean
+General Stein theorem checked: [TransportOkaGrauert.GeneralStein.universal_chart,
+ TransportOkaGrauert.GeneralStein.universal_manifold]
+
+$ lean ReplayProjectTogether.lean
+Replaying 4176 local declarations from 207 modules against upstream dependencies only.
+Kernel accepted 4174 logical declarations, including both universal Stein theorems.
+The compiler's separate runtime declarations omitted by LeanChecker: #[_private.TransportOkaGrauert.PolynomialDisk.0.TransportOkaGrauert.PolynomialDisk.timesZPow._unsafe_rec, TransportOkaGrauert.FlatScalar.upperP._unsafe_rec]
+

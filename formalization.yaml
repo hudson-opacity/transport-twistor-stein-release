@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+project:
+  name: Stein interiors of transport twistor spaces on simple surfaces
+  description: >-
+    Local Lean verification of holomorphic convexity, point separation and local
+    coordinates given by global holomorphic functions for the transport twistor
+    interior over any open base subdomain of a smooth simple conformal disk.
+  authors: [Hudson Headley]
+  license: MIT
+  responsible_maintainers: [Hudson Headley]
+classification:
+  arxiv: [math.CV, math.DG]
+  msc2020: ['32E10', '53C65']
+sources:
+  - title: Stein interiors of transport twistor spaces on simple surfaces
+    authors: [Hudson Headley]
+    type: original-proof
+    relationship: other
+    location: STEIN-INTERIOR.md
+    note: Manuscript accompanying this proof development. Public priority is subject to review.
+    license: CC-BY-4.0
+  - title: On transport twistor spaces
+    authors: [Jan Bohr]
+    type: talk
+    relationship: background
+    location: https://www.math.uni-bonn.de/people/bohr/linz22_twistor.pdf
+    note: The general Steinness question appears on slide 11.
+  - title: The Transport Oka-Grauert principle for simple surfaces
+    authors: [Jan Bohr, Gabriel P. Paternain]
+    type: article
+    relationship: background
+    id: doi:10.5802/jep.231
+    location: https://doi.org/10.5802/jep.231
+    note: Twistor distribution, coordinate identification and Euclidean Stein theorem.
+  - title: Local and Global Blow Downs of Transport Twistor Space
+    authors: [Jan Bohr, François Monard, Gabriel P. Paternain]
+    type: article
+    relationship: background
+    id: doi:10.3842/SIGMA.2026.045
+    location: https://doi.org/10.3842/SIGMA.2026.045
+    note: Coordinate equations, special metric families and the global disk isometry.
+related_formalizations: []
+status:
+  scope: >-
+    Lean 4.28.0 checks the general simple conformal disk, all open base subdomains,
+    and a separate strict exhaustion on the full disk. For an intrinsically given
+    compact oriented simple surface, existence of the isothermal chart and
+    identification with the intrinsic distribution are published inputs external to Lean.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Classical.choice, Quot.sound]
+automation:
+  methods:
+    - method: agent
+      models: [OpenAI GPT-6 family]
+      framework: OpenAI Codex with parallel agents
+      tool_setup: Proof exploration, manuscript drafting, Lean implementation, kernel verification and internal review on macOS.
+      cost:
+        wall_time: not tracked
+        spend_usd: not tracked
+        hardware: Local Apple Silicon for Lean checks and hosted inference for agents.
+      prompting_notes: The author requested a geometric inverse problem, parallel exploration and end-to-end Lean verification.
+  spend_usd: not tracked
+  notes: The AI contribution covers the mathematical arguments and the formal proof as well as writing and internal checking.
+fidelity:
+  divergences: >-
+    The formal statement uses isothermal disk coordinates for the transport complex
+    structure. The abstract-surface deduction also uses published geometry. The
+    local kernel verification records apply to the pinned 4.28.0 source tree.
+review:
+  status: internally machine-checked and AI-reviewed
+  reviewers: []
+  notes: Independent human review and registration by an external verifier are pending.
+alignment:
+  namespace: TransportOkaGrauert
+  statements:
+    - source: General Stein theorem for the conformal disk, including a smooth collar germ.
+      lean: TransportOkaGrauert.GeneralStein.manifold_of_smooth_germ
+      module: TransportOkaGrauert.GermStein
+      status: proved
+      note: Ordinary Stein conditions for the manifold of the transport atlas over any open base subdomain.
+    - source: The same theorem using the coordinate holomorphicity equations.
+      lean: TransportOkaGrauert.GeneralStein.chart_of_smooth_germ
+      module: TransportOkaGrauert.GermStein
+      status: proved
+      note: Setting the open set to the whole unit disk gives the question posed by Bohr.
+acknowledgements: Lean, mathlib, and the cited authors whose work supplied the problem and its geometric setting.

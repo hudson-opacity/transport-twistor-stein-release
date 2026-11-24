@@ -1,0 +1,3 @@
+2026-11-24 — isolated umbrella rebuild from the release sources
+
+All 206 library module sources matched their individually recorded SHA-256 hashes from an earlier successful clean build. Checked closure of every project import and checked the Lake manifest against all nine upstream Git revisions. Populated an isolated module search path with the 206 retained compiled modules and their pinned upstream libraries. Compiled the new umbrella from source with Lean 4.28.0, exit status 0. The search path included only those 206 local modules and their upstream dependencies. This run reused compiled outputs for the unchanged module sources.

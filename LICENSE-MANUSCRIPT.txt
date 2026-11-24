@@ -1,0 +1,16 @@
+Stein interiors of transport twistor spaces on simple surfaces
+Author: Hudson Headley
+Copyright notice retained from the licensed manuscript: © 2026 Hudson Headley and Carson Connard.
+
+The manuscript (STEIN-INTERIOR.md and its PDF rendering)
+is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+The following URL provides the complete license:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested attribution:
+"Stein interiors of transport twistor spaces on simple surfaces",
+Hudson Headley (2026), CC BY 4.0.
+
+The original Lean code and its accompanying verification and packaging scripts
+are distributed under the MIT license in LICENSE. Upstream dependencies and
+third-party works cited in the manuscript retain their own licenses.
