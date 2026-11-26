@@ -1,5 +1,7 @@
 # Prescribing Birkhoff jumping loci for transport first integrals
 
+**AI contribution.** OpenAI Codex agents explored the jumping-locus constructions, drafted this note, and performed the internal mathematical and Lean checks described below.
+
 On every compact oriented simple surface, each closed subset of the surface disjoint from its boundary occurs as the set of fibres where a smooth, geodesically invariant $\mathrm{SL}(2,\mathbb C)$-valued loop fails to have a canonical Birkhoff factorization. The partial indices are $\{1,-1\}$ on that set and $\{0,0\}$ elsewhere. In particular, the partial indices can vanish over the entire boundary while jumping at an interior point. This gives a negative answer to the sufficiency question immediately after Bohr and Paternain's Theorem 5.13. For the triangular loops below there is also an exact test using the full incoming data. [Bohr–Paternain, §5.3, p. 764](https://www.numdam.org/item/10.5802/jep.231.pdf#page=39)
 
 In rank one the sole partial index is the winding number of a nonvanishing scalar loop. It is constant as the base point moves along a path. Rank two is therefore the first possible rank for this counterexample.

@@ -51,13 +51,15 @@ def typeset(markdown):
 def build():
     source = SOURCE.read_text(encoding="utf-8")
     preamble, *sections = re.split(r'^## (\d+\. [^\n]+)\n', source, flags=re.MULTILINE)
-    title, byline, dateline, abstract = preamble.strip().split("\n\n", maxsplit=3)
+    title, byline, contributor, dateline, abstract = preamble.strip().split("\n\n", maxsplit=4)
     title = title.removeprefix("# ")
     authors = byline.split(" and ")
     name_list = ", ".join(json.dumps(name) for name in authors)
-    parts = [f'#set document(title: {json.dumps(title)}, author: ({name_list}))', STYLE,
+    parts = [f'#set document(title: {json.dumps(title)}, author: ({name_list}), '
+             f'description: {json.dumps(contributor, ensure_ascii=False)})', STYLE,
              f'#align(center)[#text(size: 23.5pt, weight: "bold", {json.dumps(title)})'
              f'\n\n#text(size: 13.5pt, {json.dumps(byline)})'
+             f'\n#v(3pt)\n#text(size: 12pt, {json.dumps(contributor, ensure_ascii=False)})'
              f'\n\n#text(size: 10.5pt, {json.dumps(dateline, ensure_ascii=False)})]']
     parts.append(typeset(abstract))
     for idx in range(0, len(sections), 2):

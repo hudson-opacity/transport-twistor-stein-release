@@ -2,11 +2,13 @@
 
 Hudson Headley
 
-Research manuscript · 24 November 2026
+AI contributor · OpenAI Codex (GPT-6 family)
+
+24 November 2026 · Contributor credit revised 26 November 2026
+
+Hudson Headley directed the project and maintains the release. OpenAI Codex agents developed the mathematical arguments, wrote the Lean formalization, helped draft the manuscript and performed internal checks. Independent human mathematical review is pending.
 
 For every simple conformal disk, Lean constructs a smooth exhaustion of the full transport twistor interior with a positive definite Levi form everywhere. Grauert’s solution of the Levi problem then gives Steinness. The construction of the exhaustion and its identification with the physical transport equations are checked in Lean. The application of Grauert’s theorem and the passage from an abstract surface to a global isothermal disk use the cited mathematical results. Lean also proves the three ordinary Stein properties for every open base subdomain by constructing holomorphic divisors. [Universal chart and complex-manifold theorems](TransportOkaGrauert/GeneralStein.lean) [Strict exhaustion](TransportOkaGrauert/PhysicalSteinStrict.lean) · [Grauert](https://doi.org/10.2307/1970257) · [Global isothermal coordinates, Theorems 3.4.15–16](https://users.jyu.fi/~salomi/lecturenotes/GIP2D_driver.pdf) · [Formal verification status](STEIN-FORMALIZATION.md)
-
-**AI assistance and review.** Multiple OpenAI Codex agents developed the mathematical arguments, generated the Lean formalization and helped draft this manuscript. No independent human mathematical review is recorded.
 
 ## 1. The question and the theorem
 

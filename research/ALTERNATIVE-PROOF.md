@@ -1,5 +1,7 @@
 # Transport Oka–Grauert via bounded endpoint corrections
 
+**AI contribution.** OpenAI Codex agents developed the proposed derivation from the cited transport results, drafted this note, and checked the argument internally.
+
 This note gives a proposed mathematical derivation of the general theorem from the linear transport and tomography results used by Bohr and Paternain. Its extra step is to control a two-parameter family of linear solutions at one fixed Sobolev order. The proof of that estimate is included below for review. The analytic inputs concerning surfaces have yet to be formalized in this project.
 
 ## Reduce the given attenuation once

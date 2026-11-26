@@ -1,5 +1,7 @@
 # Research notes
 
+**AI contribution.** Hudson Headley directed these investigations. OpenAI Codex agents explored the mathematical arguments, drafted the notes, and performed internal checks. Each note identifies the earlier work it uses.
+
 These investigations are preserved as working notes. The table records how far each formalization goes. The [release theorem](../README.md) is documented separately.
 
 | Question | Finding and verification status | Sources |

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: >-
+  Cite Hudson Headley as the author and credit OpenAI Codex for developing the
+  mathematical arguments, writing the Lean proofs, helping draft the paper, and
+  performing the internal review.
+title: Stein interiors of transport twistor spaces on simple surfaces
+authors:
+  - given-names: Hudson
+    family-names: Headley
+type: software
+version: "1.0.2"
+date-released: 2026-11-26
+repository-code: "https://github.com/hudson-opacity/transport-twistor-stein-release"
+abstract: >-
+  Lean formalization of Steinness of the transport twistor interior over every
+  open base subdomain of a smooth simple conformal disk. Hudson Headley directed
+  the project and maintains the release. OpenAI Codex agents developed the
+  mathematical arguments, wrote the Lean formalization, helped draft the
+  manuscript, and performed the internal review.

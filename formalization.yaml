@@ -15,6 +15,9 @@ classification:
 sources:
   - title: Stein interiors of transport twistor spaces on simple surfaces
     authors: [Hudson Headley]
+    contributors:
+      - name: OpenAI Codex (GPT-6-family agents)
+        role: Mathematical proof development, Lean formalization, manuscript drafting assistance and internal checking
     type: original-proof
     relationship: other
     location: STEIN-INTERIOR.md
@@ -62,7 +65,10 @@ automation:
         hardware: Local Apple Silicon for Lean checks and hosted inference for agents.
       prompting_notes: The author requested a geometric inverse problem, parallel exploration and end-to-end Lean verification.
   spend_usd: not tracked
-  notes: The AI contribution covers the mathematical arguments and the formal proof as well as writing and internal checking.
+  notes: >-
+    Hudson Headley directed the project and maintains the release. OpenAI Codex
+    agents developed the mathematical arguments, wrote the Lean formalization,
+    helped draft the manuscript and performed the internal checks.
 fidelity:
   divergences: >-
     The formal statement uses isothermal disk coordinates for the transport complex

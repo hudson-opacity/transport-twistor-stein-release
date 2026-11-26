@@ -1,5 +1,7 @@
 # Palomar statement and proof interface
 
+Hudson Headley directed this project and maintains the release. OpenAI Codex agents (GPT-6 family) developed the mathematical arguments, wrote the Lean formalization, helped draft the manuscript and carried out the internal checks described below. [Formalization metadata](../formalization.yaml)
+
 The proposed registry theorem is `SteinRegistry.stein_transport_twistor_interior`. For every simple metric smooth on a collar of the closed disk and every open base subdomain, it asserts compact holomorphic hulls, separation by global holomorphic functions, and local coordinates supplied by global holomorphic functions for the physical transport equations. Its standalone statement spells out the geodesic and Jacobi equations, strict boundary convexity, both escape directions, and the two equations for holomorphicity. [Challenge](Challenge.lean) · [Geometric correspondence and scope](../STEIN-FORMALIZATION.md)
 
 The solution transfers the stated simplicity hypotheses to the existing formalization. It applies `GeneralStein.chart_of_smooth_germ` and returns its three conclusions. The original proof also constructs the complex manifold atlas. This Comparator configuration selects the chart theorem. [Solution](Solution.lean) · [Verified implementation](../TransportOkaGrauert/GermStein.lean) · [Comparator configuration](comparator.json)

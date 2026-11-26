@@ -41,7 +41,7 @@ def submission_files():
 
     files[SOURCE_MANIFEST.as_posix()] = manifest
     for path in (
-        Path("STEIN-INTERIOR.md"), Path("STEIN-FORMALIZATION.md"),
+        Path("CITATION.cff"), Path("STEIN-INTERIOR.md"), Path("STEIN-FORMALIZATION.md"),
         Path("output/pdf/stein-transport-twistor.pdf"), Path("scripts/package-stein.py"),
         Path("scripts/build-stein-pdf.py"),
         VERIFICATION / "stein-check.txt", VERIFICATION / "stein-clean-build.txt",

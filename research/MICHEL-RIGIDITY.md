@@ -1,5 +1,7 @@
 # Michel’s boundary rigidity conjecture
 
+**AI contribution.** OpenAI Codex agents explored the proof strategies discussed here, drafted the note, and checked the deductions against the cited results.
+
 **Status, November 24, 2026.** The general higher-dimensional conjecture remains open in the literature we located. The arguments here establish an obstruction to one proof strategy and explain where two other strategies need additional information. The companion note gives the proof of the obstruction. [Ten points obstruct convex foliations](RIGIDITY-NET.md)
 
 ## The question and the state of the problem

@@ -1,7 +1,10 @@
 # Stein interiors of transport twistor spaces on simple surfaces
 
-**Hudson Headley**  
-24 November 2026
+**Hudson Headley** · Project direction and release maintenance
+
+**OpenAI Codex (GPT-6-family agents)** developed the mathematical arguments, wrote the Lean proof, helped draft the manuscript and performed the internal checks.
+
+Release v1.0.2 · 26 November 2026
 
 For every smooth simple conformal metric on the closed disk and every open subset of its interior, the transport twistor interior above that subset is Stein. The whole open disk gives the case posed by Jan Bohr. The proof establishes compactness of holomorphic hulls, separation of points by global holomorphic functions, and local holomorphic coordinates given by pairs of global functions. The conformal factor may have variable curvature of either sign. [Original question, slide 11](https://www.math.uni-bonn.de/people/bohr/linz22_twistor.pdf#page=11)
 
@@ -33,9 +36,7 @@ The project pins Lean and mathlib v4.28.0. The first command fetches the pinned 
 
 The transitive audit examined 4,176 declarations and the combined kernel replay checked all 4,174 logical declarations. Lean’s replay omits two compiler-generated runtime recursion helpers, identified in the log. The only axiom dependencies found were propositional extensionality, classical choice and quotient soundness.
 
-## Authorship and review
-
-OpenAI Codex agents developed the mathematical arguments, generated the Lean formalization, helped draft the manuscript and performed internal checks. The package records local Lean verification. Independent human mathematical review and registry verification are pending.
+The verification logs record the 24 November 2026 local checks. Independent human mathematical review and registry verification are pending.
 
 ## Licenses
 

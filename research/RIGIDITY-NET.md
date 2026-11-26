@@ -1,5 +1,7 @@
 # Ten points obstruct convex foliations on a simple four-ball
 
+**AI contribution.** OpenAI Codex agents developed and checked the deductions from Petrunin’s construction credited below and drafted this note.
+
 Assume the four-dimensional construction posted by Anton Petrunin on November 8, 2026. Then there is a nonempty open set of simple metrics on the four-ball for which a nested foliation by strictly convex hypersurfaces cannot cover the interior up to an empty-interior terminal set. Within this open set, an open dense subset of metrics has solenoidally injective rank-two geodesic X-ray transform, in the sufficiently high finite differentiability topology specified below. Boundary distances determine the metric locally near each such reference metric. [Petrunin’s construction, crediting Dmitry Korshunov](https://mathoverflow.net/a/516782) · [Stefanov–Uhlmann, Theorems 1.4–1.6](https://sites.math.washington.edu/~gunther/publications/Papers/jamsfinal.pdf)
 
 ## The geometric input

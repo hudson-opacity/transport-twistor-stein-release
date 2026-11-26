@@ -1,14 +1,16 @@
 # Stein interiors of transport twistor spaces on simple surfaces
 
+**Hudson Headley** directed the project and maintains this release. **OpenAI Codex** (GPT-6-family agents) developed the mathematical arguments, wrote the Lean proofs, helped draft the paper, and performed the internal review. Lean’s kernel checked the formal proofs. Independent human mathematical review is pending.
+
 **Theorem.** Let $M$ be a smooth compact oriented simple Riemannian surface. The interior of its transport twistor space is Stein. More generally, for each open set $U$ in the interior of $M$, the open unit tangent disks over $U$ form a Stein manifold with the induced transport complex structure. This answers the Steinness question posed by Jan Bohr. [Manuscript (PDF)](output/pdf/stein-transport-twistor.pdf) · [Manuscript (Markdown)](STEIN-INTERIOR.md) · [Original question, slide 11](https://www.math.uni-bonn.de/people/bohr/linz22_twistor.pdf#page=11)
 
-**v1.0.1 · Hudson Headley.** Run `python3 scripts/package-stein.py` from this tag to reproduce the Zenodo source ZIP. The deposit guide gives the author metadata and the two files for Zenodo. The verification log records the checks on the release sources. [Zenodo deposit fields](submission/ZENODO.md) · [Release verification](output/verification/stein-release-extraction.txt) · [Palomar interface and remaining port](palomar/README.md)
+**Release v1.0.2 · 26 November 2026.** Run `python3 scripts/package-stein.py` from this tag to reproduce the Zenodo source ZIP. The deposit guide gives the author metadata and the two files for Zenodo. The verification log records the checks on the release sources. [Zenodo deposit fields](submission/ZENODO.md) · [Release verification](output/verification/stein-release-extraction.txt) · [Palomar interface and remaining port](palomar/README.md)
 
 ## What Lean proves
 
 For a simple conformal disk, Lean proves compactness of holomorphic hulls, separation of points by global holomorphic functions, and existence of local coordinates given by global holomorphic functions. The complex structure is specified by the transport equations. The metric coefficient only needs to be smooth on a neighborhood of the closed disk. For the full interior there is also a checked smooth strictly plurisubharmonic exhaustion. [Universal theorems](TransportOkaGrauert/GeneralStein.lean) · [Metric-germ theorem](TransportOkaGrauert/GermStein.lean) · [Exhaustion](TransportOkaGrauert/PhysicalSteinStrict.lean)
 
-For an abstract surface, Lean verifies the transfer to its actual tangent disk given an isothermal chart. The manuscript uses published results for the existence of that chart and the identification with the intrinsic transport distribution. The literature review of 24 November 2026 found no earlier proof for all simple metrics. Independent specialist review is pending. [Intrinsic transfer](TransportOkaGrauert/IntrinsicDiskStein.lean) · [Geometric identification and priority review](STEIN-FORMALIZATION.md)
+For an abstract surface, Lean verifies the transfer to its actual tangent disk given an isothermal chart. The manuscript uses published results for the existence of that chart and the identification with the intrinsic transport distribution. The literature review of 24 November 2026 found no earlier proof for all simple metrics. [Intrinsic transfer](TransportOkaGrauert/IntrinsicDiskStein.lean) · [Geometric identification and priority review](STEIN-FORMALIZATION.md)
 
 ## Verify the proof
 

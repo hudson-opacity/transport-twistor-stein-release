@@ -9,7 +9,7 @@ https://creativecommons.org/licenses/by/4.0/legalcode
 
 Suggested attribution:
 "Stein interiors of transport twistor spaces on simple surfaces",
-Hudson Headley (2026), CC BY 4.0.
+Hudson Headley (2026), with proof development and formalization by OpenAI Codex, CC BY 4.0.
 
 The original Lean code and its accompanying verification and packaging scripts
 are distributed under the MIT license in LICENSE. Upstream dependencies and
