@@ -18,6 +18,10 @@ For a simple conformal disk, Lean checks compactness of holomorphic hulls, separ
 
 Hudson Headley initiated the experiment, directed the agents, and maintains the release. OpenAI Codex agents (GPT-6 family) developed the mathematical arguments, wrote the Lean proofs, helped draft the manuscript, and performed the internal checks. [Contribution record](formalization.yaml)
 
+**A note from Hudson.** This experiment draws on centuries of mathematics. I’m especially grateful to Jan Bohr for posing the question and to both him and Gabriel Paternain for the integrating-factor theorem that makes the first argument possible. I’m a software engineer, and I don’t have the mathematical expertise to judge independently whether the proof answers the question as intended.
+
+To me, the mathematicians who check the argument, explain why it works, and show how it fits into the field deserve credit for that work. If the argument proves useful, a brief acknowledgment that I initiated the experiment and shared the result is all I’d ask.
+
 ## Reproduce the checks
 
 With Elan installed, run the following commands from the repository root. The toolchain and manifest pin Lean 4.28.0 and mathlib.
